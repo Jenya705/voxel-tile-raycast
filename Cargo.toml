@@ -2,6 +2,8 @@
 name = "voxel-tile-raycast"
 version = "0.1.0"
 edition = "2021"
+description = "Ray casting for voxel and tile maps"
+license = "MIT"
 
 [dependencies]
 nalgebra = "0.32"

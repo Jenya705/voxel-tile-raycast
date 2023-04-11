@@ -29,7 +29,7 @@ macro_rules! raycast {
             }
             let dir = dir.normalize();
             let mut t = 0.0;
-            let mut index = origin.map(|val| val as i32);
+            let mut index = origin.map(|val| val.floor() as i32);
             let step = dir.map(|val| val.signum() as i32);
             let t_delta = dir.map(|val| 1.0 / val).abs();
             let dist = $vec_indexes.map(|val| {
